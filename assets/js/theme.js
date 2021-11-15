@@ -126,6 +126,37 @@ $("document").ready(function() {
     }
   })
 
+  $(".why-us").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 10000,
+  })
+
+  $(".partners").owlCarousel({
+    items: 6,
+    nav: true,
+    // navText: ["<span class='mai-chevron-back'></span>", "<span class='mai-chevron-forward'></span>"],
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 16
+      },
+      768: {
+        items: 3,
+        margin: 16
+      },
+      992: {
+        items: 6,
+        margin: 16
+      }
+    }
+  })
+
   $(".testimonial-carousel").owlCarousel({
     responsive: {
       0: {
@@ -139,29 +170,6 @@ $("document").ready(function() {
       992: {
         items: 3,
         margin: 24
-      }
-    }
-  })
-  
-  $(".why-us").owlCarousel({
-    items: 1,
-    // nav: true,
-    // navText: ["<span class='mai-chevron-back'></span>", "<span class='mai-chevron-forward'></span>"],
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 10000,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 16
-      },
-      768: {
-        items: 1,
-        margin: 16
-      },
-      992: {
-        items: 1,
-        margin: 16
       }
     }
   });
